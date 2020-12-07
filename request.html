@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Cedarville+Cursive&family=La+Belle+Aurore&family=Poppins:wght@300&family=Raleway&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+
+  <body style="background-color: #eaf6f6;">
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="men.html">Men</a>
+    <a href="women.html">Women</a>
+    <a href="whoweare.html">Who We Are</a>
+    <a class = active href="request.html">Request</a>
+    
+  </div>
+
+  <div class="container">
+
+    <div class="sr"><h2>Submit a Request</h2></div>
+
+    <h3>Let us know if there's anything we've missed in terms of styles or products that are currently trending!</h3>
+
+    <br>
+
+    <br>
+
+    <script type = "text/javascript">
+      function fn2(){
+
+        var fname = document.getElementById("fname").value;
+        var fnamelength = fname.length;
+        
+            while(fnamelength == 0){
+                fname = window.prompt("Enter valid first name");
+                fnamelength = fname.length;
+            }
+          
+        var lname = document.getElementById("lname").value;
+        var lnamelength = lname.length;
+
+            while(lnamelength == 0){
+                lname = window.prompt("Enter valid last name");
+                lnamelength = lname.length;
+            }
+
+        var subject1 = document.getElementById("subject").value;
+        var subjectlength = subject1.length;
+
+            while(subjectlength == 0){
+                subjectname = window.prompt("Enter valid request");
+                subjectlength = subjectnames.length;
+            }
+        
+        window.alert("You have successfully sent a request.");
+        window.location.href = "request.html";
+      }
+    </script>
+
+
+    <form action="request.html">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="subject">Your request</label>
+      <textarea id="subject" name="subject" placeholder="Let us know what else you'd like to see on InFit!" style="height:200px"></textarea>
+  
+      <button onclick="fn2()" type="submit">Send Request</button>
+  
+    </form>
+  </div>
+  </body>

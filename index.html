@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Infit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Cedarville+Cursive&family=La+Belle+Aurore&family=Poppins:wght@300&family=Raleway&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+
+
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="men.html">Men</a>
+    <a href="women.html">Women</a>
+    <a href="whoweare.html">Who We Are</a>
+    <a href="request.html">Request</a>
+    
+  </div>
+
+
+  <body>
+    <div class="top">
+      <img src="logo2.png" alt="Infit Logo" style="width:500px;">
+      <div class = "motto">
+        <h2>Find <i>out</i> fits for the <i>in</i> side.</h2>
+      </div>
+
+      <img class="top-cloud" src="cloud.png" alt="cloud-img">
+      <img class="second-cloud" src="cloud.png" alt="cloud-img">
+      <img class="middle-cloud" src="cloud.png" alt="cloud-img">
+      <img class="bottom-cloud" src="cloud.png" alt="cloud-img">
+      <img class="mountain" src="mountain.png" alt="mountain-img">
+
+    </div>
+    <div class="middle-container">
+
+    <div class="lookbook">
+
+      <h2>Check out our Fall/Winter 2020 Lookbook</h2>
+
+      <div class="lookbook-row">
+        <img class="man-png" src="man.png" alt="man-png">
+        <div class = "menwomen">
+          <h3><a href="men.html">Men</a></h3> </div>
+        <p class="man-desc">Click "Men" above to check out what's in style for men this season.</p>
+      </div>
+    
+      <div class="lookbook-row">
+        <img class="woman-png" src="woman.png" alt="woman-png">
+        <div class = "menwomen">
+          <h3><a href="women.html">Women</a></h3> </div>
+        <p class="woman-desc">Click "Women" above to check out what's in style for women this season.</p>
+      </div>
+    </div>
+
+      <br>
+
+      <br>
+
+      <hr>
+
+
+  <div class="contact-me">
+    <h2><a href="request.html">Make a request</a></h2>
+    <p>Don't be shy, let us know if you want to see specific products or styles on our site.</p>
+  
+  </div>
+</div>
+
+  <hr>
+  <br>
+
+  <script type = "text/javascript">
+
+    function fn1(){
+
+        var email = document.getElementById("Email").value;
+        var emaillength = email.length;
+
+            while(emaillength == 0){
+                email = window.prompt("Enter valid email");
+                emaillength = email.length;
+            }
+
+        var username = document.getElementById("Username").value;
+        var usernamelength = username.length;
+
+            while(usernamelength == 0){
+                username = window.prompt("Enter valid username");
+                usernamelength = username.length;
+            }
+        window.alert("You have been subscribed");
+        window.location.href = "index.html";
+    }
+
+</script>
+
+<body> 
+  <form action="index.html">
+    <div class="container">
+      <h2>Subscribe to our Newsletter</h2>
+      <p>Receive updates about new styles, seasons, and more!</p>
+        <input type="text" id="Email" placeholder= "Email" required>
+        <input type="text" id="Username" placeholder="Username" required>
+        <button onclick="fn1()" type="submit">Subscribe Now</button>
+        </div>
+  </form> 
+</body>
+  <br>
+  <br>
+  <hr>
+
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <h3>See any issues? Shoot us an email.</h3>
+    <p>We'll do our best to help.</p>
+    <br>
+    <a class="btn" href="mailto:ishmeet.singh@sjsu.edu">CONTACT US</a>
+  </div>
+</div>
+
+<br>
+
+<div class="bottom-container">
+  <br>
+  <a class="footer-link" href="https://www.facebook.com/">Facebook</a>
+  <a class="footer-link" href="https://www.instagram.com/">Instagram</a>
+  <a class="footer-link" href="https://www.twitter.com/">Twitter</a>
+  <p class="copyright">© 2020 InFit.</p>
+  <br>
+</div>
+  </body>
+
+</html>
